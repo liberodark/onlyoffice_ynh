@@ -1,0 +1,7 @@
+SOURCE_URL=https://github.com/ONLYOFFICE/DocumentServer/releases/download/ONLYOFFICE-DocumentServer-5.5.3/onlyoffice-documentserver_amd64.deb
+SOURCE_SUM=d594ccec7907eefe42fa7e526f5a7fff7c2f58963329c41587687f91f28338fd8ead143d591bbeb89845366b9ee845ed5649bcd3aed675b93ac960c7dd583ca4
+SOURCE_SUM_PRG=sha512sum
+SOURCE_FORMAT=deb
+SOURCE_IN_SUBDIR=false
+SOURCE_EXTRACT=false
+SOURCE_FILENAME=onlyoffice-documentserver.deb
