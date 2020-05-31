@@ -130,15 +130,24 @@ echo onlyoffice-documentserver onlyoffice/db-pwd password $db_pwd | debconf-set-
 echo onlyoffice-documentserver onlyoffice/db-name string $db_name | debconf-set-selections
 
 #=================================================
+# DOWNLOAD, CHECK AND UNPACK SOURCE
+#=================================================
+
+ynh_app_setting_set "$app" final_path "$final_path"
+
+# Download, check integrity, uncompress and patch the source from app-[arch].src
+case $(uname -m) in
+    x86_64) ynh_setup_source "$final_path" "app-amd64" ;;
+    *) ynh_die "Unknown arch" ;;
+esac
+
+#=================================================
 # INSTALL ONLYOFFICE
 #=================================================
 ynh_print_info --message="Install OnlyOffice..."
 
-# The onlyoffice dev had the magnificent idea to add a "nginx restart" during
-# the install/configure of their package, which is awful since that will
-# restart nginx and the whole webadmin and maybe even the yunohost command
-# running the install ...
-ynh_add_app_dependencies --package="onlyoffice-documentserver"
+dpkg --install "$final_path"/onlyoffice-documentserver.deb
+rm -f "$final_path"/onlyoffice-documentserver.deb
 
 #=================================================
 # MODIFY A CONFIG FILE
