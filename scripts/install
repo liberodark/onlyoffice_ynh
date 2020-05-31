@@ -76,7 +76,7 @@ ynh_install_extra_repo --repo="deb http://download.onlyoffice.com/repo/debian sq
 #=================================================
 ynh_print_info --message="Installing dependencies..."
 
-ynh_install_app_dependencies $pkg_dependencies
+ynh_install_app_dependencies "postgresql libstdc++6 redis-server rabbitmq-server libcurl4-nss-dev"
 
 #=================================================
 # CREATE A POSTGRESQL DATABASE
