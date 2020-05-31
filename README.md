@@ -1,6 +1,8 @@
 # OnlyOffice Server for YunoHost
 OnlyOffice Document Server
 
+Shipped version: 5.5.3
+
 - [Yunohost project](https://yunohost.org)
 - [OnlyOffice website](https://www.onlyoffice.com)
 
