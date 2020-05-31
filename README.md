@@ -9,14 +9,6 @@ OnlyOffice Document Server
 [![Integration level](https://dash.yunohost.org/integration/onlyoffice_ynh.svg)](https://dash.yunohost.org/appci/app/onlyoffice_ynh)  
 [![Install OnlyOffice with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=onlyoffice)
 
-### Version
-
-1. Master = Is stable and work version
-
-2. BETA_VERSION = Beta is version for multi-instances and add possibility to install on same domain as nextcloud (not work need fix).
-
-3. YHN_VERSION = This version respect rules of yunohost for app install (not work need fix).
-
 ### Installing guide
 
  1. App can be installed by YunoHost **admin web-interface** or by **running following command**:
