@@ -22,4 +22,4 @@ Shipped version: 5.5.3
  
 ### Upgrade this package:
 
-        $ sudo yunohost app upgrade --verbose example -u https://github.com/YunoHost-Apps/onlyoffice_ynh
+        $ sudo yunohost app upgrade --verbose onlyoffice -u https://github.com/YunoHost-Apps/onlyoffice_ynh
